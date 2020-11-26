@@ -1,33 +1,18 @@
 
-/**
- * Write a description of class PantallaHoraYFecha here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class PantallaHoraYFecha
-{
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class PantallaHoraYFecha
-     */
-    public PantallaHoraYFecha()
-    {
-        // initialise instance variables
-        x = 0;
+public class PantallaHoraYFecha{
+    
+    private PantallaDosDigitos pantallaHoras;
+    private PantallaDosDigitos pantallaMinutos;
+    private PantallaDosDigitos pantallaDias;
+    private PantallaDosDigitos pantallaMeses;
+    private PantallaDosDigitos pantallaAños;
+    
+    public PantallaHoraYFecha(){
+        pantallaHoras = new PantallaDosDigitos(0, 24);
+        pantallaMinutos = new PantallaDosDigitos(0, 60);
+        pantallaDias = new PantallaDosDigitos(1, 30);
+        pantallaMeses = new PantallaDosDigitos(1, 12);
+        pantallaAños = new PantallaDosDigitos(1, 99);
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
-    {
-        // put your code here
-        return x + y;
-    }
+    
 }
